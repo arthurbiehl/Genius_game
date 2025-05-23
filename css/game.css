@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #252525eb;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_header {
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.icon i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #3498db;
+    color: white;
+}
+
+/*main*/
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text_main {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_main button {
+    width: 100px;
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.text_main button:hover {
+    background-color: #2980b9;
+}
+
+.text_main p {
+    color: white;
+    font-size: 15px;
+}
+
+.text_main i {
+    color: white;
+    font-size: 18px;
+}
+/*laoder*/
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #3498db;
+    border-top-color: #53535383;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* cards */
+
+.game-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.caixa {
+    width: 630px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#red { background: red; }
+#blue { background: blue; }
+#yellow { background: yellow; }
+#green { background: green; }
+
+.active {
+    opacity: 0.3;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.1;
+}
+

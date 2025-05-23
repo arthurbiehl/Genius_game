@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Genius - Início</title>
+</head>
+
+<body>
+    <header>
+        <div class="container_header">
+            <div class="icon">
+                <i class="fa-solid fa-gamepad"></i>
+                <h1>Genius</h1>
+            </div>
+            <a href="pages/cadastro.html">Trocar</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="text_main">
+                <div id="bemVindo"></div>
+                <a href="/pages/game.html">JOGAR</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const container = document.getElementById("bemVindo");
+        const nome = localStorage.getItem("nomeUsuario");
+
+        if (nome) {
+            container.innerText = `Bem-vindo, ${nome}!`;
+        } else {
+            container.innerText = "Bem-vindo!";
+        }
+    </script>
+</body>
+
+</html>
