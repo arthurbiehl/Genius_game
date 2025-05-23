@@ -9,5 +9,5 @@ function bemVindo() {
         localStorage.removeItem("nomeUsuario");
     }
 
-    window.location.href = "/index.html";
+    window.location.href = "/inicio.html";
 }
