@@ -9,5 +9,5 @@ function bemVindo() {
         localStorage.removeItem("nomeUsuario");
     }
 
-    window.location.href = "/inicio.html";
+    window.location.href = "Genius_game/index.html";
 }
